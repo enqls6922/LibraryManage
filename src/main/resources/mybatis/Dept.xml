@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dept">
+<resultMap id="DeptResult" type="Dept">
+	<result property="deptno" column="deptno" />
+	<result property="dname" column="dname" />
+	<result property="loc" column="loc" />
+</resultMap>
+
+<select id="TKselectDept" resultMap="DeptResult">
+	select * from dept
+</select>
+</mapper>
+
+
+
